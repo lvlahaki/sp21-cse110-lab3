@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<htm lang='en'>
+    <head>
+        <title>My Journal</title>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <body>
+        <header>
+            <h1>My Journal</h1>
+            <nav>
+                <ol>
+                    <li><a href="#April 5, 2021">April 5, 2021</a></li>
+                    <li><a href="#April 6, 2021">April 6, 2021</a></li>
+                    <li><a href="#April 7, 2021">April 7, 2021</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <h2>Hello, my name is Lars. This is my journal.</h2>
+
+            <section>
+                <h3 id="April 5, 2021">April 5, 2021</h3>
+                <hr>
+                <p>I had a <i>very</i> busy day today! I had class all morning, then did laundry and cleaning around noon. Then I got some school work done and practiced guitar for a bit. </p>
+                <div>Here's a bit of a song I'm working on:</div>
+                <audio controls>
+                    <source src="Worms.mp3" type="audio/mp3">
+                Oops! Browser does not support the audio element.
+                </audio>
+                <p>In the late afternoon, I had a really nice meeting with my research group. Then I walked my dog and took a short walk for myself.</p>
+                <img src="Billy.JPG" alt="A small dog sniffing a bush of flowers." width="300">
+
+                <h3 id="April 6, 2021">April 6, 2021</h3>
+
+                <hr>
+
+                <p>Today I woke up pretty late. I wrote a bit of a short story in the morning, then worked a little bit on my research project. I tried to start my <span>CSE 135</span> homework, but now I have to wait until I get my github credits. :( In the afternoon, I had class. Then I took Billy out for his walk, and then took my own.</p>
+                <img src="Lemons.JPG" alt="A box of lemons on someone's lawn" width="300">
+                <p>There was a <b>box of lemons</b> on someone's lawn, so I took one. It smells nice. My mom went grocery shopping while I was on my walk because she's <strong>vaccinated</strong> and I'm not.</p>
+                <div>Here are some things I added to her list:</div>
+                <ul>
+                    <li>Plantains</li>
+                    <li>Frozen fruit</li>
+                    <li>Frozen spinach</li>
+                </ul>
+                <p>I washed a <b>lot</b> of dishes in the evening, and listened to some <a href="https://www.youtube.com/watch?v=z9hFTDzkw2k">space pirate folk punk music.</a></p>
+
+                <h3 id="April 7, 2021">April 7, 2021</h3>
+
+                <hr>
+
+                <p>I stayed up too late last night reading, and had to wake up for class this morning. I think I payed attention pretty well, despite being <em>so very sleepy.</em> I read some more after class, then I started working on my <span>CSE 110</span> lab! Later, if my <b>github credits appear >:(</b> I'll work on my <span>CSE 135</span> assignment. Otherwise, I'll write some more and take my daily walk.</p>
+                <div>There are a lot of stray cats in my neighborhood. Here's one that looks like it has three eyes!!</div>
+                <video width="300" controls>
+                    <source src="Psychic cat.mp4" type="video/mp4">
+                    Oops! Browser does not support the video element.
+                </video>
+                <p>I think it's psychic. <br>I hope I see it again soon.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Add an entry</h2>
+                <form>
+                    <fieldset>
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="Name">
+                        <label for="Date">Date</label>
+                        <input type="date" id="Date" name="Date">
+                    </fieldset>
+
+                    <fieldset>
+                        <h3>How did you feel today?</h3>
+                        <input type="radio" id="Happy" name="Feelings" value="Happy">
+                        <label for="Happy">Happy</label>
+                        <input type="radio" id="Sad" name="Feelings" value="Sad">
+                        <label for="Sad">Sad</label>
+                        <input type="radio" id="Bored" name="Feelings" value="Bored">
+                        <label for="Bored">Bored</label>
+
+                        <h3>Which activities did you do?</h3>
+
+                        <input type="checkbox" id="Music" name="Activities" value="Music">
+                        <label for="Music">Music</label>
+                        <input type="checkbox" id="Reading" name="Activities" value="Reading">
+                        <label for="Reading">Reading</label>
+                        <input type="checkbox" id="School" name="Activities" value="School">
+                        <label for="School">School</label>
+                        <input type="checkbox" id="Walk" name="Activities" value="Walk">
+                        <label for="Walk">Walk</label>
+
+                        <h3>Did you hang out with anyone today?</h3>
+                        <label for="Social">Who?</label>
+                        <input list="people" name ="Social" id="Social"/>
+                        <datalist id="people">
+                            <option value="Friends"></option>
+                            <option value="Family"></option>
+                            <option value="No one :("></option>
+                        </datalist>
+
+                        <h3>What did you spend the most time doing today?</h3>
+                        <label for="things-done">Pick one!</label>
+                        <select name="things-done" id="things-done">
+                            <option value="Fun things!">Fun things!</option>
+                            <option value="Important things!">Important things!</option>
+                            <option value="Lazy things :(">Lazy things :(</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <h3>What else did you do today?</h3>
+                        <textarea id="entry" name="entry" rows="4" cols="50">Today I...</textarea>
+                    </fieldset>
+
+                    <button type="button">Submit!</button>
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <details>
+                <summary>This is a journal created for CSE 110 at UCSD.</summary>
+                <p>I am a CE student at UCSD. This journal is a collection of things I've seen an done in the past few days.</p>
+            </details>
+            <a href="https://ucsd.edu/">UCSD</a>
+        </footer>
+    </body>
+</htm>
