@@ -1,1 +1,1 @@
-Site URL: https://lvlahaki.github.io/Lab2/
+https://lvlahaki.github.io/sp21-cse110-lab3/
