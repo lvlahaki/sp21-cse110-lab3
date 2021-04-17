@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
         <style>
             body {
@@ -26,6 +26,7 @@
                 </ol>
             </nav>
             <h1 id="greeting">Hello, my name is Lars. This is my journal.</h1>
+            <div id="littleme"><img src="media/me.png" alt="A drawing of a person with glasses." width=100px></div>
         </header>
         <main>
 
@@ -47,7 +48,14 @@
                     <h2 id="entry2">April 6, 2021</h2>
                     <hr>
                     <p>Today I woke up pretty late. I wrote a bit of a short story in the morning, then worked a little bit on my research project. I tried to start my <span>CSE 135</span> homework, but now I have to wait until I get my github credits. :( In the afternoon, I had class. Then I took Billy out for his walk, and then took my own.</p>
-                    <img src="media/Lemons.JPG" alt="A box of lemons on someone's lawn" width="300">
+                    <div id="lemons">
+                        <img src="media/Lemons.JPG" alt="A box of lemons on someone's lawn" width="300px">
+                        <div id="lemondoodles"> 
+                            <img src="media/doodle pics/smily.png" alt="A smily face." width="100px">
+                            <img src="media/doodle pics/shoe.png" alt="A shoe." width="100px">
+                            <img src="media/doodle pics/lemon.png" alt="A lemon." width="100px">
+                        </div>
+                    </div>
                     <p>There was a <b>box of lemons</b> on someone's lawn, so I took one. It smells nice. My mom went grocery shopping while I was on my walk because she's <strong>vaccinated</strong> and I'm not.</p>
                     <div>Here are some things I added to her list:</div>
                     <ul>
@@ -66,10 +74,15 @@
                     <hr>
                     <p>I stayed up too late last night reading, and had to wake up for class this morning. I think I payed attention pretty well, despite being <em>so very sleepy.</em> I read some more after class, then I started working on my <span>CSE 110</span> lab! Later, if my <b>github credits appear >:(</b> I'll work on my <span>CSE 135</span> assignment. Otherwise, I'll write some more and take my daily walk.</p>
                     <div>There are a lot of stray cats in my neighborhood. Here's one that looks like it has three eyes!!</div>
-                    <video width="300" controls>
-                        <source src="media/PsychicCat.mp4" type="video/mp4">
-                        Oops! Browser does not support the video element.
-                    </video>
+                    <div class="psychic_stuff">
+                        <span class="vid"><video width="300" controls>
+                            <source src="media/PsychicCat.mp4" type="video/mp4">
+                            Oops! Browser does not support the video element.
+                        </video></span>
+                        <span id="doodle1"><img src="media/doodle pics/cat.png" alt="A cat." width="100px"></span>
+                        <span id="doodle2"><img src="media/doodle pics/eye.png" alt="An eye." width="100px"></span>
+                        <span id="doodle3"><img src="media/doodle pics/yarn.png" alt="A ball of yarn." width="100px"></span>
+                    </div>
                     <p>I think it's psychic. <br>I hope I see it again soon.</p>
                 </section>
             </section>
