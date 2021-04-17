@@ -1,11 +1,4 @@
-#greeting{
-    text-align:center;
-}
-
-nav a {
-    text-decoration:none;
-}
-
+/*font related*/
 @font-face{
     font-family: "Caveat";
     src: url('https://fonts.googleapis.com/css2?family=Caveat&display=swap')
@@ -17,4 +10,78 @@ h1, h2, h3{
 
 *{
     font-family: "Calibri", sans-serif;
+}
+
+/*content*/
+
+#greeting {
+    display:grid;
+    text-align:center;
+    min-width: 5in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration:none;
+    color:black;
+}
+
+nav{
+    width: 1.5in;
+    height: 92vh;
+    display: inline-block;
+    position: fixed;
+    top: 3vh;
+    left: 3vh;
+    margin-right: 5px;
+}
+
+/*white boxes*/
+nav, section.entry {
+    background-color: white;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+section.entry {
+    width: 5in;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: .5cm;
+    padding-bottom: 1cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+.entry div{
+    padding-bottom: 1em;
+}
+
+.form form, .form h2, .form hr{
+    max-width: 70vw;
+    margin: 0px 15vw 0px 15vw;
+    display: block;
+}
+
+.form h2{
+    padding: 10px 0 0 0;
+}
+
+.form form{
+    padding: 20px 0 20px 0;
+}
+
+footer{
+    margin-left: 15vw;
+    margin-right: 15vw;
 }

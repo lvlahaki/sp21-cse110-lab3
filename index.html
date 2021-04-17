@@ -11,13 +11,12 @@
 
         <style>
             body {
-                background-color:aliceblue
+                background-color:rgb(213, 233, 252)
             }
         </style>
     </head>
     <body>
         <header>
-            <h1>My Journal</h1>
             <nav>
                 <ol>
                     <li><a href="#entry1">April 5, 2021</a></li>
@@ -26,55 +25,58 @@
                     <li><a href="#addentry">Add an Entry</a></li>
                 </ol>
             </nav>
+            <h1 id="greeting">Hello, my name is Lars. This is my journal.</h1>
         </header>
         <main>
-            <h2 id="greeting">Hello, my name is Lars. This is my journal.</h2>
 
             <section>
-                <h3 id="entry1">April 5, 2021</h3>
-                <hr>
-                <p>I had a <i>very</i> busy day today! I had class all morning, then did laundry and cleaning around noon. Then I got some school work done and practiced guitar for a bit. </p>
-                <div>Here's a bit of a song I'm working on:</div>
-                <audio controls>
-                    <source src="media/Worms.mp3" type="audio/mp3">
-                Oops! Browser does not support the audio element.
-                </audio>
-                <p>In the late afternoon, I had a really nice meeting with my research group. Then I walked my dog and took a short walk for myself.</p>
-                <img src="media/Billy.JPG" alt="A small dog sniffing a bush of flowers." width="300">
-
-                <h3 id="entry2">April 6, 2021</h3>
-
-                <hr>
-
-                <p>Today I woke up pretty late. I wrote a bit of a short story in the morning, then worked a little bit on my research project. I tried to start my <span>CSE 135</span> homework, but now I have to wait until I get my github credits. :( In the afternoon, I had class. Then I took Billy out for his walk, and then took my own.</p>
-                <img src="media/Lemons.JPG" alt="A box of lemons on someone's lawn" width="300">
-                <p>There was a <b>box of lemons</b> on someone's lawn, so I took one. It smells nice. My mom went grocery shopping while I was on my walk because she's <strong>vaccinated</strong> and I'm not.</p>
-                <div>Here are some things I added to her list:</div>
-                <ul>
-                    <li style="color:darkgoldenrod">Plantains</li>
-                    <li style="color:#800080">Frozen berries</li>
-                    <li style="color:rgb(4, 77, 4)">Frozen spinach</li>
-                    <li style="color:hsl(33, 68%, 70%)">Hummus</li>
-                </ul>
-                <p>I washed a <b>lot</b> of dishes in the evening, and listened to some <a href="https://www.youtube.com/watch?v=z9hFTDzkw2k">space pirate folk punk music.</a></p>
-
-                <h3 id="entry3">April 7, 2021</h3>
-
-                <hr>
-
-                <p>I stayed up too late last night reading, and had to wake up for class this morning. I think I payed attention pretty well, despite being <em>so very sleepy.</em> I read some more after class, then I started working on my <span>CSE 110</span> lab! Later, if my <b>github credits appear >:(</b> I'll work on my <span>CSE 135</span> assignment. Otherwise, I'll write some more and take my daily walk.</p>
-                <div>There are a lot of stray cats in my neighborhood. Here's one that looks like it has three eyes!!</div>
-                <video width="300" controls>
-                    <source src="media/PsychicCat.mp4" type="video/mp4">
-                    Oops! Browser does not support the video element.
-                </video>
-                <p>I think it's psychic. <br>I hope I see it again soon.</p>
+                <section class="entry">
+                    <h2 id="entry1">April 5, 2021</h2>
+                    <hr>
+                    <p>I had a <i>very</i> busy day today! I had class all morning, then did laundry and cleaning around noon. Then I got some school work done and practiced guitar for a bit. </p>
+                    <div>Here's a bit of a song I'm working on:</div>
+                    <audio controls>
+                        <source src="media/Worms.mp3" type="audio/mp3">
+                    Oops! Browser does not support the audio element.
+                    </audio>
+                    <p>In the late afternoon, I had a really nice meeting with my research group. Then I walked my dog and took a short walk for myself.</p>
+                    <img src="media/Billy.JPG" alt="A small dog sniffing a bush of flowers." width="300">
+                </section>
+                
+                <section class="entry">
+                    <h2 id="entry2">April 6, 2021</h2>
+                    <hr>
+                    <p>Today I woke up pretty late. I wrote a bit of a short story in the morning, then worked a little bit on my research project. I tried to start my <span>CSE 135</span> homework, but now I have to wait until I get my github credits. :( In the afternoon, I had class. Then I took Billy out for his walk, and then took my own.</p>
+                    <img src="media/Lemons.JPG" alt="A box of lemons on someone's lawn" width="300">
+                    <p>There was a <b>box of lemons</b> on someone's lawn, so I took one. It smells nice. My mom went grocery shopping while I was on my walk because she's <strong>vaccinated</strong> and I'm not.</p>
+                    <div>Here are some things I added to her list:</div>
+                    <ul>
+                        <li style="color:darkgoldenrod">Plantains</li>
+                        <li style="color:#800080">Frozen berries</li>
+                        <li style="color:rgb(4, 77, 4)">Frozen spinach</li>
+                        <li style="color:hsl(33, 68%, 70%)">Hummus</li>
+                    </ul>
+                    <p>I washed a <b>lot</b> of dishes in the evening, and listened to some <a href="https://www.youtube.com/watch?v=z9hFTDzkw2k">space pirate folk punk music.</a></p>
+    
+                    
+                </section>
+        
+                <section class="entry">
+                    <h2 id="entry3">April 7, 2021</h2>
+                    <hr>
+                    <p>I stayed up too late last night reading, and had to wake up for class this morning. I think I payed attention pretty well, despite being <em>so very sleepy.</em> I read some more after class, then I started working on my <span>CSE 110</span> lab! Later, if my <b>github credits appear >:(</b> I'll work on my <span>CSE 135</span> assignment. Otherwise, I'll write some more and take my daily walk.</p>
+                    <div>There are a lot of stray cats in my neighborhood. Here's one that looks like it has three eyes!!</div>
+                    <video width="300" controls>
+                        <source src="media/PsychicCat.mp4" type="video/mp4">
+                        Oops! Browser does not support the video element.
+                    </video>
+                    <p>I think it's psychic. <br>I hope I see it again soon.</p>
+                </section>
             </section>
 
-            <hr>
-
-            <section>
-                <h2 id="addentry">Add an entry</h2>
+            <section class="form">
+                <hr>
+                <h2>Add an entry</h2>
                 <form>
                     <fieldset>
                         <label for="Name">Name</label>
@@ -130,8 +132,9 @@
                 </form>
             </section>
         </main>
-        <hr>
+
         <footer>
+            <hr>
             <details>
                 <summary>This is a journal created for CSE 110 at UCSD.</summary>
                 <p>I am a CE student at UCSD. This journal is a collection of things I've seen an done in the past few days.</p>
