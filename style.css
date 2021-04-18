@@ -4,6 +4,12 @@
     src: url('https://fonts.googleapis.com/css2?family=Caveat&display=swap')
 }
 
+@media (max-width: 1000px) {
+    nav{
+        visibility: hidden;
+    }
+}
+
 h1, h2, h3{
     font-family: "Caveat", cursive;
 }
@@ -12,9 +18,14 @@ h1, h2, h3{
     font-family: "Calibri", sans-serif;
 }
 
+::selection{
+    background-color:lightseagreen;
+    color:white;
+}
+
 /*content*/
 
-#greeting {
+header > h1 {
     text-align:center;
     min-width: 5in;
     margin-left: auto;
@@ -31,9 +42,22 @@ h1, h2, h3{
 nav a {
     text-decoration:none;
     color:black;
+
 }
 
-nav{
+nav a:hover {
+    color:lightskyblue;
+}
+
+a:active {
+    background-color:rgb(174, 186, 199);
+}
+
+a[href="#addentry"]:hover {
+    color:rgb(144, 88, 155);
+}
+
+nav {
     width: 1.5in;
     height: 92vh;
     display: inline-block;
@@ -116,11 +140,11 @@ section.entry {
     display: block;
 }
 
-.form h2{
+.form hr + h2{
     padding: 10px 0 0 0;
 }
 
-.form form{
+.form hr ~ form{
     padding: 20px 0 20px 0;
 }
 
